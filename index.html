@@ -97,7 +97,28 @@ return false;
 
 </script>
 <style type="text/css">
+	.leftimage{
+		float:left;
+		width: 500px;
+		height: 100%;
+		margin-top: -12px;
+	}
+
+	.rightplace{
+		float:left;
+		width: 48%;
+	}
 	
+@media only screen and (max-width: 768px) {
+		.rightplace{
+			width: 95%;
+			padding-bottom: 20px;
+		}
+		.leftimage{
+			width: 95%;
+			height: auto;
+		}
+	}
 
 
 </style>
@@ -110,18 +131,13 @@ return false;
       </div>
 
 		<form name="form" style="padding-left: 8%;">
-		  <div style="float:left;width: 500px;height: 100%;margin-top: -12px;">
+		  <div class='leftimage'>
 		  	<img src="image/binaryflux.png" width="95%">
 		  </div>
-		   <div class="lable-2" style="float:left;width: 48%;">
-		   		<div style="font-size: 1.2em;
-    padding-bottom: 50px;
-    padding-top: 11px;
-    color: #99a5ab;letter-spacing: 1px;font-style: italic;">
-		   			<q>
+		   <div class="lable-2 rightplace">
+		   		<div style="font-size: 1.2em;padding-bottom: 50px;padding-top: 11px;color: #99a5ab;letter-spacing: 1px;font-style: italic;">
 		   			Binaryflux enables ecosystem to store,analyse,investigate and respond by converting raw streams of data into meaningful and connected information.
-Using artificial neural networking and modern hash tagging techniques to derive correlation between data points Binaryflux makes it easy to realise the pain points of any ecosystem and can be used as a tool for IT operations,cyber security ,business analytics and much more.</q>
-
+					Using artificial neural networking and modern hash tagging techniques to derive correlation between data points Binaryflux makes it easy to realise the pain points in system/environment. Product can be put to use for IT operations,cyber security ,business analytics and others to derive meaningful results.
 		   		</div>
 		   		<input type="text" name="fullname" class="text" placeholder="Full Name">
 		        <input type="text" class="text"  name="email" placeholder="Email address">
@@ -129,9 +145,9 @@ Using artificial neural networking and modern hash tagging techniques to derive 
 		        <input type="text" class="text" name="organization" placeholder="Organization">
 		        <input type="text" class="text" name="designation" placeholder="Designation">
 		         <h3>By submitting, you agree to allow binaryflux team to get in touch <span class="term"> (design by: <a href="http://w3layouts.com">w3layouts</a>)</span></h3>
-		   <div class="submit" style="padding:0px;">
-			  <input type="submit" onclick="return myFunction()" value="Get Connected" style="margin-top:30px;">
-		   </div>
+			   <div class="submit" style="padding:0px;">
+				  <input type="submit" onclick="return myFunction()" value="Get Connected" style="margin-top:30px;">
+			   </div>
 		   </div>
 		  
 		   <div class="clear"> </div>
